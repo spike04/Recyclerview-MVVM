@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
 
+        <import type="android.view.View" />
+
         <variable
             name="movie"
-            type="com.rubin.recyclerviewdatabinding.data.entities.Movie" />
+            type="com.rubin.recyclerviewdatabinding.data.models.Movie" />
     </data>
 
     <LinearLayout
@@ -32,7 +35,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="195dp"
                         android:background="@drawable/captain_marvel"
-                        android:scaleType="matrix" />
+                        android:scaleType="matrix"
+                        app:image="@{movie.image}" />
 
                     <TextView
                         android:id="@+id/textViewIsNew"
@@ -45,7 +49,8 @@
                         android:text="New"
                         android:textAlignment="center"
                         android:textColor="#ffffff"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:visibility="@{movie.is_new == 0 ? View.GONE: View.VISIBLE}" />
 
                     <TextView
                         android:id="@+id/textViewRating"
@@ -154,7 +159,7 @@
                     android:layout_marginBottom="5dp"
                     android:background="@drawable/textview_border_background"
                     android:padding="2dp"
-                    android:text="2D"
+                    android:text="@{movie.type}"
                     android:textAlignment="center"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
 

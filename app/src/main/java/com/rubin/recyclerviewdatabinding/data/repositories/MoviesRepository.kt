@@ -1,4 +1,4 @@
-package com.rubin.recyclerviewdatabinding.data.repository
+package com.rubin.recyclerviewdatabinding.data.repositories
 
 import com.rubin.recyclerviewdatabinding.data.network.MoviesApi
 import com.rubin.recyclerviewdatabinding.data.network.SafeApiRequest

@@ -1,6 +1,6 @@
 package com.rubin.recyclerviewdatabinding.data.network
 
-import com.rubin.recyclerviewdatabinding.data.entities.Movie
+import com.rubin.recyclerviewdatabinding.data.models.Movie
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

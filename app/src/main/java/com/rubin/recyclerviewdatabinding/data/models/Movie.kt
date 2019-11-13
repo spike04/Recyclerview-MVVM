@@ -1,4 +1,4 @@
-package com.rubin.recyclerviewdatabinding.data.entities
+package com.rubin.recyclerviewdatabinding.data.models
 
 data class Movie(
     val id: Int,

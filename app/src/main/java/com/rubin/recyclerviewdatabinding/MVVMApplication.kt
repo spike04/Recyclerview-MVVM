@@ -1,9 +1,13 @@
 package com.rubin.recyclerviewdatabinding
 
 import android.app.Application
+import org.kodein.di.Kodein
+import org.kodein.di.KodeinAware
+import org.kodein.di.android.x.androidXModule
 
-class MVVMApplication : Application() {
+class MVVMApplication : Application(), KodeinAware {
 
-
-
+    override val kodein = Kodein.lazy {
+        import(androidXModule(this@MVVMApplication))
+    }
 }

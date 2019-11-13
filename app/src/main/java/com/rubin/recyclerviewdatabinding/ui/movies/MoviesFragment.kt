@@ -10,7 +10,7 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.rubin.recyclerviewdatabinding.R
 import com.rubin.recyclerviewdatabinding.data.network.MoviesApi
-import com.rubin.recyclerviewdatabinding.data.repository.MoviesRepository
+import com.rubin.recyclerviewdatabinding.data.repositories.MoviesRepository
 import kotlinx.android.synthetic.main.movies_fragment.*
 
 class MoviesFragment : Fragment() {

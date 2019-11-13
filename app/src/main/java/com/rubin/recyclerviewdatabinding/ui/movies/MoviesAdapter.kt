@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.rubin.recyclerviewdatabinding.R
-import com.rubin.recyclerviewdatabinding.data.entities.Movie
+import com.rubin.recyclerviewdatabinding.data.models.Movie
 import com.rubin.recyclerviewdatabinding.databinding.ItemMovieBinding
 
 class MoviesAdapter(
